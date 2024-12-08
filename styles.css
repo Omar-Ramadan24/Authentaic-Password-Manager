@@ -1,0 +1,104 @@
+/* General Extension Popup Dimensions */
+body {
+    font-family: Arial, sans-serif; /* font style */
+    margin: 0;
+    padding: 0;
+    width: 600px; /* popup width */
+    height: 700px; /* popup height */
+    background-color: #f9f9f9; /* background color */
+}
+
+.container {
+    padding: 10px; /* Add padding */
+}
+
+/* Headers */
+h1, h2 {
+    font-size: 18px; /* font size */
+    margin-bottom: 10px; /* Add spacing below */
+}
+
+/* Inputs and Buttons */
+input, textarea, button {
+    width: 100%; 
+    margin-bottom: 10px; /* Add spacing between elements */
+    padding: 8px; /* Padding inside input fields and buttons */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+button {
+    background-color: #007bff; /* Primary button color */
+    color: white; /* White text on buttons */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Table Layout */
+table {
+    width: 100%; /* Full width table */
+    border-collapse: collapse; /* Remove double borders */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Light gray border for table cells */
+    padding: 8px; /* Padding inside cells */
+    text-align: left; /* Left-align content */
+}
+
+/* Copy Button Styles */
+.copy-btn {
+    padding: 5px 10px; /* Add padding inside the button */
+    color: white; /* White text */
+    background-color: #28a745; /* Green background */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 2px; /* Small margin around buttons */
+}
+
+.copy-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Delete Button Styles */
+.delete-btn {
+    padding: 5px 10px; /* Add padding inside the button */
+    color: white; /* White text */
+    background-color: red; /* Red background for delete */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.delete-btn:hover {
+    background-color: darkred; /* Darker red on hover */
+}
+
+/* Password Strength Meter */
+#strength-meter {
+    width: 100%; /* Full width bar */
+    height: 8px; /* Thin bar */
+    background-color: #ddd; /* Light gray background */
+    border-radius: 4px; /* Rounded corners */
+    margin-top: 5px; /* Spacing above the bar */
+    position: relative; /* Positioned relative to parent */
+}
+
+#strength-bar {
+    height: 100%; /* Fill height of the parent */
+    width: 0%; /* Start with no fill */
+    background-color: red; /* Initial red color for weak passwords */
+    border-radius: 4px; /* Rounded corners */
+    transition: width 0.3s, background-color 0.3s; /* Smooth transition for fill and color */
+}
+
+#strength-feedback {
+    font-size: 12px; /* Smaller text size */
+    margin-top: 5px; /* Spacing above the feedback */
+    color: red; /* Initial color for weak feedback */
+}

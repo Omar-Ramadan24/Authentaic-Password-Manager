@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+<body style="width: 600px; height: 700px;"> <!-- popup size -->
+    <div class="container">
+        <h1>Password Manager</h1>
+
+        <!-- Add Password Section -->
+        <div id="add-password">
+            <h2>Add Password</h2>
+            <!-- Input for site name -->
+            <input type="text" id="site" placeholder="Site" required>
+            <!-- Input for username/login -->
+            <input type="text" id="login" placeholder="Login" required>
+            
+            <!-- Password Input with Strength Meter -->
+            <input type="password" id="password" placeholder="Password" required>
+            <div id="strength-meter">
+                <div id="strength-bar"></div> <!-- Strength bar that fills based on password strength -->
+            </div>
+            <p id="strength-feedback"></p> <!-- Text feedback about password strength -->
+
+            <!-- Optional comment about the password -->
+            <textarea id="comment" placeholder="Comment (optional)"></textarea>
+            <!-- Button to save password -->
+            <button id="save-password">Save Password</button>
+        </div>
+
+        <!-- Password List Section -->
+        <div id="password-list">
+            <h2>Saved Passwords</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Site</th> <!-- Column for the site -->
+                        <th>Login</th> <!-- Column for the username/login -->
+                        <th>Password</th> <!-- Column for the password -->
+                        <th>Comment</th> <!-- Column for any comments -->
+                        <th>Actions</th> <!-- Column for delete buttons -->
+                        <th>Copy</th> <!-- Column for copy buttons -->
+                    </tr>
+                </thead>
+                <tbody id="passwords-tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="popup.js"></script> <!-- Link to JavaScript -->
+</body>
+</html>
